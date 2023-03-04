@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2D3C3B</color>
+    <color name="colorPrimaryDark">#0b2b28</color>
+    <color name="colorAccent">#1cf2ef</color>
+    <color name="deep_green">#0b2b28</color>
+    <color name="red">#E61111</color>
+    <color name="light_green">#c0f5d7</color>
+    <color name="lightest_green">#FFF9FDFC</color>
+    <color name="fluorescent_green">#1cf2ef</color>
+    <color name="highlight_inchat">#18FFFF</color>
+    <color name="register_green">#42baef</color>
+    <color name="splash">#e3e3e4</color>
+    <color name="splash_dark">#E2E2C2</color>
+    <color name="light_grey">#FF9E9EA1</color>
+    <color name="splash_darker">#E9D9D2</color>
+    <color name="green_btn">#09BBBB</color>
+    <color name="whitie">#fff</color>
+    <color name="transparent">#00000000</color>
+    <color name="opaque">#b87a7b7b</color>
+    <color name="grey_colorPrimary">#878787</color>
+    <color name="dark_colorPrimary">#7A7A7A</color>
+    <color name="blue_colorPrimary">#383370</color>
+    <color name="edit_textcolor">#0b2b28</color>
+    <color name="dblue_colorPrimary">#FF314F6D</color>
+    <color name="grey_bg">#FFEDECEC</color>
+    <color name="whitish">#FAFAFA</color>
+    <color name="lightest_grey">#d9d9d9</color>
+    <color name="creamy">#dfd0c0</color>
+    <color name="grey">#585858</color>
+    <color name="violetgrey">#FF56485C</color>
+    <color name="black">#000000</color>
+    <color name="Dblue">#2b2941</color>
+    <color name="Wtrans">#F1E9E9</color>
+    <color name="cardback">#53000000</color>
+</resources>

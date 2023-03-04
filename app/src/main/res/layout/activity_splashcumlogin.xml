@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/creamy"
+    tools:context=".SplashCumLoginActivity">
+
+    <TextView
+        android:id="@+id/app_name_insplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:padding="@dimen/four_dp"
+        android:background="@color/creamy"
+        android:fontFamily="@font/baumans"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@id/app_name_insplash"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="splash_loader.json"
+        app:lottie_loop="false" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_below="@id/loader"
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight_dp"
+            android:background="@color/opaque"
+            android:hint="Enter email"
+            android:padding="@dimen/four_dp"
+            android:textColorHint="@color/splash"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/whitie"
+                android:textColorHint="@color/splash" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight_dp"
+            android:background="@color/opaque"
+            android:hint="password"
+            android:padding="@dimen/four_dp"
+            android:textColorHint="@color/splash"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_pass_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:paddingRight="@dimen/four_dp"
+                android:textColor="@color/whitie"
+                android:textColorHint="@color/splash" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/four_dp"
+            android:background="@drawable/frame_back_opaq"
+            android:fontFamily="@font/baumans"
+            android:text="login"
+            android:textColor="@color/colorPrimary" />
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight_dp"
+            android:background="@drawable/frame_back_opaq"
+            android:fontFamily="@font/baumans"
+            android:text="Registration"
+            android:textColor="@color/colorPrimary" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

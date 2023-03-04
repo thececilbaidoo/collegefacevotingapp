@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey_bg"
+    android:id="@+id/rl_background"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/four_dp">
+
+
+    <TextView
+        android:id="@+id/tv_user_uid"
+        style="@style/TextCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/four_dp"
+        android:text="#UID"
+        tools:fontFamily="@font/marmelad" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        style="@style/TextCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_user_uid"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:fontFamily="@font/marmelad"
+        android:padding="@dimen/four_dp"
+        android:text="Name"
+        android:textAllCaps="true" />
+
+    <ImageView
+        android:id="@+id/iv_cand_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="@dimen/four_dp"
+        android:layout_marginTop="@dimen/four_dp"
+        android:layout_toLeftOf="@id/info_icon"
+        android:layout_marginEnd="@dimen/four_dp"
+        android:src="@drawable/person_white"
+        android:contentDescription="poll candidate photo"
+        android:layout_marginBottom="@dimen/four_dp" />
+
+    <ImageView
+        android:id="@+id/info_icon"
+        android:background="@drawable/frame_back_grey_oval"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_dialog_info"
+        android:padding="2dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+</RelativeLayout>

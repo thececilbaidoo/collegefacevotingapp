@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitish"
+    android:orientation="vertical"
+    tools:context=".PollVoteActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_add_order"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/abl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/eight_dp"
+        android:background="@drawable/frame_border_red"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="@dimen/eight_dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+    <TextView
+        android:id="@+id/tv_title_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/eight_dp"
+        android:layout_marginBottom="@dimen/eight_dp"
+        android:padding="@dimen/four_dp"
+        android:text="Please Select Your Candidate"
+        android:textColor="@color/grey" />
+
+    <ListView
+        android:id="@+id/lv_current"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_title_info"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/eight_dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/fortyeight_dp"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/thirtytwo" />
+
+    <Button
+        android:id="@+id/btn_votesend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/frame_back_opaq"
+        android:fontFamily="@font/baumans"
+        android:onClick="onVoteSendClicked"
+        android:text="Vote"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>

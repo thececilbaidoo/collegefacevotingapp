@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_tab"
+    android:orientation="vertical"
+    android:background="@color/whitish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardCurrentActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_add_order"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+            android:background="@drawable/frame_border_red"
+            android:padding="@dimen/eight_dp"
+            android:text="Showing Available Polls" />
+
+        <TextView
+            android:id="@+id/tv_title_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/four_dp"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:textColor="@color/grey"
+            android:layout_marginBottom="@dimen/eight_dp"
+            android:text="Please Select From The Following To Vote" />
+
+        <ListView
+            android:id="@+id/lv_current"
+            android:dividerHeight="@dimen/twentyfour"
+            android:divider="@color/transparent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:id="@+id/rl_image"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_no_history"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/eight_dp"
+                android:src="@drawable/no_history"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_camera_ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".FaceAuthActivity">
+
+    <Button
+        android:id="@+id/btn_reupload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@drawable/frame_border_red"
+        android:onClick="onFaceAuth"
+        android:text="Face Authentication"
+        android:textColor="@color/colorPrimary"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_loginout_click"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:contentDescription="take a picture"
+        android:onClick="onTakePicClicked"
+        android:padding="@dimen/four_dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/face_photo" />
+
+    <ImageView
+        android:id="@+id/iv_loginout_click1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:contentDescription="take a picture"
+        android:onClick="onTakePicClicked"
+        android:padding="@dimen/four_dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:scaleType="centerInside"
+        android:src="@drawable/face_photo" />
+
+
+</LinearLayout>
