@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">iFaceVoting</string>
+    <string name="app_name">GCTU Decides Voter</string>
     <string name="enter_new_password">Enter new password</string>
-    <string name="prompt_email">Email ID</string>
+    <string name="prompt_email">Student Email</string>
     <string name="prompt_password">Password</string>
-    <string name="user_name">Name</string>
-    <string name="email_address">Email address</string>
-    <string name="contact">Contact number</string>
+    <string name="user_name">Full Name</string>
+    <string name="email_address">School Email</string>
+    <string name="contact">Contact Number</string>
 </resources>

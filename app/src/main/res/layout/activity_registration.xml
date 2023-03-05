@@ -38,7 +38,7 @@
                 android:id="@+id/et_name_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
+                android:hint="Full Name"
                 android:inputType="textPersonName|textCapWords"
                 android:textColor="@color/colorPrimaryDark" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -86,7 +86,7 @@
                 android:id="@+id/et_pincode_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Identification number"
+                android:hint="Student ID"
                 android:inputType="text"
                 android:textColor="@color/colorPrimaryDark" />
         </com.google.android.material.textfield.TextInputLayout>

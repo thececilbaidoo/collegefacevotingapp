@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class EmailValidation {
-    private static final String EMAIL_REGEX = "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-z]{2,})$";
+    private static final String EMAIL_REGEX = "\\b[\\w.%-]+@live\\.gtuc\\.edu\\.gh\\b";
     private static Pattern pattern;
 
     private Matcher matcher;
